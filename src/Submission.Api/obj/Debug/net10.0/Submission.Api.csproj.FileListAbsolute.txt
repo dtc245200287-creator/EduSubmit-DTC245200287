@@ -24,3 +24,4 @@ D:\Code_demo\EduSubmit-DTC245200287\src\Submission.Api\obj\Debug\net10.0\refint\
 D:\Code_demo\EduSubmit-DTC245200287\src\Submission.Api\obj\Debug\net10.0\Submission.Api.pdb
 D:\Code_demo\EduSubmit-DTC245200287\src\Submission.Api\obj\Debug\net10.0\Submission.Api.genruntimeconfig.cache
 D:\Code_demo\EduSubmit-DTC245200287\src\Submission.Api\obj\Debug\net10.0\ref\Submission.Api.dll
+D:\Code_demo\EduSubmit-DTC245200287\src\Submission.Api\obj\Debug\net10.0\Submission.Api.sourcelink.json

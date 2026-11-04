@@ -1,4 +1,27 @@
-# Bài 1 - EduSubmit và Minimal API
+# Bài 1 – Tổng quan hệ thống và MEP
+Họ tên: Phạm Bảo Lâm | MSSV: DTC245200287 | Lớp: CNTTK23E
+
+## 1. Cài đặt môi trường (Bước 4)
+![Kiểm tra phiên bản dotnet và git](./images/step4.png)
+
+## 2. MepDemo (Bước 7)
+![Chạy 5 mô hình MEP](./images/mep.png)
+
+## 3. BasicWebApi (Bước 8)
+![Thử nghiệm REST Client và tiếng Nhật](./images/webapi.png)
+
+## 4. Dự án EduSubmit (Bước 9 & 11)
+![Chạy 2 terminal API Server và Client](./images/edusubmit.png)
+
+## 5. Thí nghiệm lỗi (Bước 10)
+| # | Dự đoán | Thực tế | Đúng/Sai | Giải thích |
+| a | Client vẫn nhận bài 3 | Thành công | Đúng | DTO tự thích ứng với JSON mới |
+| b | Báo lỗi kết nối | Connection refused | Đúng | API chưa khởi chạy |
+| c | Trả lỗi 400 Bad Request | HTTP 400 Bad Request | Đúng | Server validate dữ liệu rỗng |
+| d | Đổi cổng 5050 chạy được | Thành công | Đúng | URL truyền qua tham số args[0] |
+
+## 6. Đẩy code lên GitHub (Bước 13)
+![Minh chứng Git commit và tag bai1](./images/git.png)
 
 ## Bước 7 - Phân tích request/response
 
