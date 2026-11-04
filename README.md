@@ -2,6 +2,8 @@
 
 Du an minh hoa MEP request-response gom hai tien trinh doc lap:
 
+👉 **[Xem báo cáo thực hành Bài 1 chi tiết (có ảnh minh chứng)](./docs/bai1.md)**
+
 - `src/Submission.Api`: ASP.NET Core Minimal API tren .NET 10.
 - `src/Submission.Client`: ung dung console dung `HttpClient` va JSON.
 
