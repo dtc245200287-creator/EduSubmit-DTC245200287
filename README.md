@@ -1,31 +1,32 @@
 # EduSubmit-DTC245200287
 
-Du an minh hoa MEP request-response gom hai tien trinh doc lap:
+Dự án thực hành môn **Phát triển ứng dụng phân tán** (ASP.NET Core Minimal API trên .NET 10) của sinh viên Phạm Bảo Lâm (MSSV: DTC245200287 - Lớp CNTTK23E).
 
-👉 **[Xem báo cáo thực hành Bài 1 chi tiết (có ảnh minh chứng)](./docs/bai1.md)**
+👉 **[Xem báo cáo thực hành Bài 1 chi tiết (có ảnh minh chứng)](docs/bai1.md)**  
+👉 **[Xem báo cáo thực hành Bài 2 chi tiết (có ảnh minh chứng)](docs/bai2.md)**
+---
 
-- `src/Submission.Api`: ASP.NET Core Minimal API tren .NET 10.
-- `src/Submission.Client`: ung dung console dung `HttpClient` va JSON.
+## Các bài thực hành trong Repository
 
-## Chay
+* **Bài 1 (`src/Submission.Api` & `src/Submission.Client`):** Mô hình request-response phân tán đơn giản.
+* **Bài 2 (`Catalog.Api` & `Catalog.Client`):** RESTful API Catalog API quản lý sản phẩm, xử lý DTO, validation, mã trạng thái HTTP (201, 400, 404) và lọc Query String.
 
-Terminal 1:
+---
 
-```powershell
+## Hướng dẫn Khởi chạy Dự án
+
+### 1. Chạy Bài 1 (Submission System)
+**Terminal 1:**
+```bash
 dotnet run --project src/Submission.Api --urls http://localhost:5000
-```
-
-Terminal 2:
-
-```powershell
+**Terminal 2:**
+```bash
 dotnet run --project src/Submission.Client -- http://localhost:5000
-```
 
-## Endpoint
-
-- `GET /`: kiem tra API.
-- `GET /api/assignments`: danh sach 3 bai tap mau.
-- `POST /api/submissions`: tao luot nop, tra `201 Created` va `Location`.
-- `GET /api/submissions/{id}`: tra cuu luot nop theo `Guid`, tra `404` neu khong ton tai.
-
-Du lieu duoc luu trong bo nho, nen se mat khi API khoi dong lai.
+### 2. Chạy Bài 2 (Catalog RESTful API)
+Terminal 1 (API Server):
+```bash
+dotnet run --project Catalog.Api --urls http://localhost:5100
+Terminal 2 (Console Client):
+```bash
+dotnet run --project Catalog.Client -- http://localhost:5100

@@ -22,4 +22,3 @@ CatalogPractice/
 └── docs/
     ├── bai2.md                   # Báo cáo tổng kết bài 2
     └── images/                   # Thư mục lưu trữ hình ảnh minh chứng
-    
