@@ -12,3 +12,4 @@ D:\CatalogPractice\Catalog.Client\obj\Debug\net10.0\refint\Catalog.Client.dll
 D:\CatalogPractice\Catalog.Client\obj\Debug\net10.0\Catalog.Client.pdb
 D:\CatalogPractice\Catalog.Client\obj\Debug\net10.0\Catalog.Client.genruntimeconfig.cache
 D:\CatalogPractice\Catalog.Client\obj\Debug\net10.0\ref\Catalog.Client.dll
+D:\CatalogPractice\Catalog.Client\obj\Debug\net10.0\Catalog.Client.sourcelink.json

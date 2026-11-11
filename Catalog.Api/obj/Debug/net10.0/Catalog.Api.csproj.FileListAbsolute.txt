@@ -26,3 +26,4 @@ D:\CatalogPractice\Catalog.Api\obj\Debug\net10.0\refint\Catalog.Api.dll
 D:\CatalogPractice\Catalog.Api\obj\Debug\net10.0\Catalog.Api.pdb
 D:\CatalogPractice\Catalog.Api\obj\Debug\net10.0\Catalog.Api.genruntimeconfig.cache
 D:\CatalogPractice\Catalog.Api\obj\Debug\net10.0\ref\Catalog.Api.dll
+D:\CatalogPractice\Catalog.Api\obj\Debug\net10.0\Catalog.Api.sourcelink.json
