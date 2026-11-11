@@ -23,7 +23,7 @@ Họ tên: Phạm Bảo Lâm | MSSV: DTC245200287 | Lớp: CNTTK23E
 | e | Trả lỗi 404 body rỗng | HTTP 404 Not Found | Đúng | Route constraint :int chặn từ tầng Framework |
 
 ## 6. Đẩy code lên GitHub (Bước 13)
-![Minh chứng Git commit và tag bai2](./images/git.png)
+![Minh chứng Git commit và tag bai2](./images/git_bai2.png)
 
 ## Bước 7 - Phân tích request/response
 
