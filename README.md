@@ -4,6 +4,7 @@ Dự án thực hành môn **Phát triển ứng dụng phân tán** (ASP.NET Co
 
 👉 **[Xem báo cáo thực hành Bài 1 chi tiết (có ảnh minh chứng)](docs/bai1.md)**  
 👉 **[Xem báo cáo thực hành Bài 2 chi tiết (có ảnh minh chứng)](docs/bai2.md)**
+
 ---
 
 ## Các bài thực hành trong Repository
@@ -16,17 +17,17 @@ Dự án thực hành môn **Phát triển ứng dụng phân tán** (ASP.NET Co
 ## Hướng dẫn Khởi chạy Dự án
 
 ### 1. Chạy Bài 1 (Submission System)
-**Terminal 1:**
+
+**Terminal 1 (API Server):**
 ```bash
 dotnet run --project src/Submission.Api --urls http://localhost:5000
-**Terminal 2:**
-```bash
-dotnet run --project src/Submission.Client -- http://localhost:5000
+**Terminal 2 (Console Client):**
+```bash dotnet run --project src/Submission.Client -- http://localhost:5000
 
 ### 2. Chạy Bài 2 (Catalog RESTful API)
-Terminal 1 (API Server):
-```bash
-dotnet run --project Catalog.Api --urls http://localhost:5100
-Terminal 2 (Console Client):
-```bash
+
+**Terminal 1 (API Server):**
+```bash dotnet run --project Catalog.Api --urls http://localhost:5100
+**Terminal 2 (Console Client):**
 dotnet run --project Catalog.Client -- http://localhost:5100
+
