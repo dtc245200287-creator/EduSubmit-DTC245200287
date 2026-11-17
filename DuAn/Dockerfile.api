@@ -1,0 +1,14 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+WORKDIR /src
+COPY src/Library.Shared/Library.Shared.csproj src/Library.Shared/
+COPY src/Library.Api/Library.Api.csproj src/Library.Api/
+RUN dotnet restore src/Library.Api/Library.Api.csproj
+COPY src/Library.Shared/ src/Library.Shared/
+COPY src/Library.Api/ src/Library.Api/
+RUN dotnet publish src/Library.Api/Library.Api.csproj -c Release -o /app/publish /p:UseAppHost=false
+
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
+WORKDIR /app
+EXPOSE 8080
+COPY --from=build /app/publish .
+ENTRYPOINT ["dotnet", "Library.Api.dll"]

@@ -1,0 +1,13 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+WORKDIR /src
+COPY src/Library.Shared/Library.Shared.csproj src/Library.Shared/
+COPY src/Library.Worker/Library.Worker.csproj src/Library.Worker/
+RUN dotnet restore src/Library.Worker/Library.Worker.csproj
+COPY src/Library.Shared/ src/Library.Shared/
+COPY src/Library.Worker/ src/Library.Worker/
+RUN dotnet publish src/Library.Worker/Library.Worker.csproj -c Release -o /app/publish /p:UseAppHost=false
+
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
+WORKDIR /app
+COPY --from=build /app/publish .
+ENTRYPOINT ["dotnet", "Library.Worker.dll"]
